@@ -3,9 +3,8 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// Replace 'my-app' with your GitHub repository name
 export default defineConfig(({ mode }) => ({
-  base: "/identity-nurture-main/", // <-- Add this line
+  base: "./", // ✅ Use "./" instead of "/my-app/"
 
   server: {
     host: "::",
